@@ -1,7 +1,7 @@
 # Portafolio – Fredy Alvarez
 
 Portafolio profesional de Fredy Alvarez, Desarrollador Web Junior, donde presento
-proyectos desarrollados durante mi formación y práctica en desarrollo web frontend y full stack.
+proyectos desarrollados durante mi formación y práctica en desarrollo web Frontend y Full Stack.
 
  **Portafolio:**  
 https://fredyalvarezz.github.io/Portafolio/
@@ -23,7 +23,7 @@ en la experiencia del usuario.
 Este portafolio incluye proyectos como:
 
 ## StreamWhere
-Aplicación web para buscar películas y series y conocer en qué plataforma de streaming están disponibles y agregarla a tu listado.
+Aplicación web para buscar películas y series y conocer en qué plataforma de streaming están disponibles y agregarlas a tu listado.
 
 - React + Vite
 - APIs externas (TMDb, WatchMode)
@@ -36,7 +36,7 @@ Demo: https://fredyalvarezz.github.io/Streamwhere/
 ---
 
 ##  Around USA
-Aplicación full stack tipo red social.
+Aplicación Full Stack tipo red social.
 
 - React (Frontend)
 - Express + MongoDB (Backend)
@@ -49,7 +49,7 @@ Aplicación full stack tipo red social.
 ---
 
 ## Coffee Shop
-Landing page responsiva desarrollada con HTML y CSS siguiendo metodología BEM.
+Landing page responsiva desarrollada con HTML y CSS siguiendo la metodología BEM.
 
 - HTML5
 - CSS3
