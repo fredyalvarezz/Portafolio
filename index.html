@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fredy Alvarez | Desarrollador Web Jr</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="description"
+        content="Portafolio de Fredy Alvarez, Desarrollador Web Junior. Proyectos en React, APIs REST y Full Stack.">
+    <meta name="author" content="Fredy Alvarez">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav__logo">FA</div>
+        <ul class="nav__links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Tecnologías</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="intro">
+        <h1>Fredy Alvarez</h1>
+        <h2>Desarrollador Web Junior</h2>
+        <p>Ingeniero en Sistemas | Full-Stack | Soporte Técnico</p>
+        <p>Construyo aplicaciones web modernas enfocadas en experiencia de usuario y arquitectura limpia.</p>
+        <div class="intro-actions">
+            <a href="assets/cv/Fredy_Alvarez_CV.pdf" target="_blank" class="btn-cv">
+                <img src="assets/icons/file.svg" alt="CV icono">
+                CV
+            </a>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <h3>Proyectos</h3>
+
+        <div class="projects">
+
+            <article class="project-card">
+                <div class="project-content">
+
+                    <div class="project-images">
+                        <img src="assets/img/streamwhere.png" alt="StreamWhere">
+                        <img src="assets/img/streamwheremovieadd.png" alt="StreamWhere Add Movie">
+                        <img src="assets/img/streamwhereMyWatchList.png" alt="StreamWhere MyWatchList">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>StreamWhere</h4>
+
+                        <p>
+                            Aplicación web que permite buscar películas y series y conocer en qué plataforma
+                            de streaming están disponibles. Proyecto final del Bootcamp de TripleTen.
+                        </p>
+
+                        <p>
+                            Desarrollada con React + Vite, la aplicación gestiona usuarios autenticados y permite
+                            guardar películas y series en una lista personal con distintos estados
+                            (por ver, viendo y vistas).
+                        </p>
+
+                        <p>
+                            Integra APIs externas como TMDb y WatchMode para obtener información detallada
+                            de películas y series, además de un backend propio para el almacenamiento seguro
+                            de datos del usuario.
+                        </p>
+
+
+                        <p class="project-tech">
+                            HTML · CSS · JavaScript · React · APIs REST
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://fredyalvarezz.github.io/Streamwhere/" target="_blank">Visitar sitio</a>
+                            <a href="https://github.com/fredyalvarezz/tripleten_final_project_Movies_wheretowatch.git"
+                                target="_blank">Código</a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article class="project-card ">
+                <div class="project-content">
+
+                    <div class="project-images">
+                        <img src="assets/img/aroundusa.png" alt="Around USA">
+                        <img src="assets/img/aroundusaimg.png" alt="Around USA IMG">
+                        <img src="assets/img/aroundusaadd.png" alt="Around USA Add">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Around USA</h4>
+
+                        <p>
+                            Aplicación web full-stack tipo red social para compartir fotografías,
+                            editar el perfil y gestionar tarjetas de usuario.
+                        </p>
+
+                        <p>
+                            Frontend desarrollado en React y backend en Express.js con MongoDB,
+                            implementando autenticación con tokens y una API REST para la gestión
+                            de usuarios y contenido.
+                        </p>
+                        <p>
+                            Al ser uno de los primeros proyectos completos del bootcamp el mayor reto
+                            fue manejar estados globales en React y proteger rutas privadas que solo aparecieran
+                            al estar logeado o que no se pudieran acceder directamente sin haber iniciado sesión.
+
+                        </p>
+
+
+                        <p class="project-tech">
+                            HTML · CSS · JavaScript · React · APIs REST
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://fredyalvarezz.github.io/web_project_aroundusa_frontend_demo/"
+                                target="_blank">Visitar sitio</a>
+                            <a href="https://github.com/fredyalvarezz/web_project_api_full" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-content">
+
+                    <div class="project-images">
+                        <img src="assets/img/coffeeshop.png" alt="Coffee Shop">
+                        <img src="assets/img/coffeeshoprecetas.png" alt="Coffee Shop Recetas">
+                        <img src="assets/img/coffeeshopreservar.png" alt="Coffee Shop Reservar">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Coffee Shop</h4>
+
+                        <p>
+                            Landing page responsiva para un café, enfocada en estructura,
+                            estilos modernos y buenas prácticas de HTML y CSS, siguiendo una
+                            estructura extricta de diseño y siguiendo la metodologia BEM
+                            para un codigo estructurado.
+                        </p>
+                        <p>
+                            Se utilizo la integracion de contendio desde Youtube para agregar los videos
+                            y poder reproducirlos desde la aplicación web.
+                            Fue de los primeros proyectos en TripleTen, el cual me ayudo a entender mejor el
+                            funcionamiento
+                            y como los diseños CSS nos ayudan a que sea responsivo y adaptarlo a lo necesario para que
+                            su funcionamiento
+                        </p>
+
+                        <p class="project-tech">
+                            HTML · CSS
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://fredyalvarezz.github.io/web_project_coffeeshop/" target="_blank">Visitar
+                                sitio</a>
+                            <a href="https://github.com/fredyalvarezz/web_project_coffeeshop" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section id="about" class="section about">
+        <h3>Sobre mí</h3>
+
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="assets/img/me.svg" alt="Foto de Fredy Alvarez">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Soy Ingeniero en Sistemas Computacionales titulado y Desarrollador Web Junior,
+                    con experiencia en soporte técnico, redes e infraestructura, y formación en
+                    desarrollo web a través del bootcamp de TripleTen.
+                </p>
+
+                <p>
+                    Mi perfil combina la comprensión de sistemas en producción con el desarrollo
+                    de aplicaciones web modernas, lo que me permite crear soluciones funcionales,
+                    detectar errores con mayor facilidad y construir interfaces mantenibles y bien estructuradas.
+                </p>
+
+                <p>
+                    Actualmente busco oportunidades como
+                    <strong>Frontend o Backend / Desarrollador Web Junior</strong>,
+                    donde pueda aportar valor desde el primer día y seguir creciendo profesionalmente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills" class="section">
+        <h3>Tecnologías</h3>
+
+        <div class="skills">
+
+            <div class="skill">
+                <img src="assets/icons/html.png" alt="HTML5">
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/css.png" alt="CSS3">
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/javascript.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/react.png" alt="React">
+                <span>React</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/github.png" alt="Git">
+                <span>Git / GitHub</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/api.png" alt="APIs REST">
+                <span>APIs REST</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/MongoDB.png" alt="MongoDB">
+                <span>MongoDB</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/support.png" alt="Soporte Técnico">
+                <span>Soporte Técnico</span>
+            </div>
+
+            <div class="skill">
+                <img src="assets/icons/network.png" alt="Redes">
+                <span>Redes</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h3>Contacto</h3>
+        <p>
+            Email:
+            <a href="mailto:fredy-alexander1@hotmail.com">
+                fredy-alexander1@hotmail.com
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/fredyalvarezz" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/fredy-alexander-alvarez-leyva/" target="_blank">LinkedIn</a>
+        </p>
+
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Fredy Alvarez</p>
+
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
