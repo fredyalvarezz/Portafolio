@@ -42,138 +42,38 @@
 
         <div class="projects">
 
-            <article class="project-card">
-                <div class="project-content">
+            <article class="project-card" data-project="streamwhere">
+                <img src="assets/img/streamwhere.png" alt="StreamWhere">
 
-                    <div class="project-images">
-                        <img src="assets/img/streamwhere.png" alt="StreamWhere">
-                        <img src="assets/img/streamwheremovieadd.png" alt="StreamWhere Add Movie">
-                        <img src="assets/img/streamwhereMyWatchList.png" alt="StreamWhere MyWatchList">
-                    </div>
-
-                    <div class="project-info">
-                        <h4>StreamWhere</h4>
-
-                        <p>
-                            Aplicación web que permite buscar películas y series y conocer en qué plataforma
-                            de streaming están disponibles. Proyecto final del Bootcamp de TripleTen.
-                        </p>
-
-                        <p>
-                            Desarrollada con React + Vite, la aplicación gestiona usuarios autenticados y permite
-                            guardar películas y series en una lista personal con distintos estados
-                            (por ver, viendo y vistas).
-                        </p>
-
-                        <p>
-                            Integra APIs externas como TMDb y WatchMode para obtener información detallada
-                            de películas y series, además de un backend propio para el almacenamiento seguro
-                            de datos del usuario.
-                        </p>
-
-
-                        <p class="project-tech">
-                            HTML · CSS · JavaScript · React · APIs REST
-                        </p>
-
-                        <div class="project-links">
-                            <a href="https://fredyalvarezz.github.io/Streamwhere/" target="_blank">Visitar sitio</a>
-                            <a href="https://github.com/fredyalvarezz/tripleten_final_project_Movies_wheretowatch.git"
-                                target="_blank">Código</a>
-                        </div>
-                    </div>
-
+                <div class="project-card-info">
+                    <h4>StreamWhere</h4>
+                    <p>HTML · CSS · JavaScript · React · APIs REST · Fullstack</p>
                 </div>
             </article>
 
+            <article class="project-card" data-project="aroundusa">
+                <img src="assets/img/aroundusa.png" alt="Around USA">
 
-            <article class="project-card ">
-                <div class="project-content">
-
-                    <div class="project-images">
-                        <img src="assets/img/aroundusa.png" alt="Around USA">
-                        <img src="assets/img/aroundusaimg.png" alt="Around USA IMG">
-                        <img src="assets/img/aroundusaadd.png" alt="Around USA Add">
-                    </div>
-
-                    <div class="project-info">
-                        <h4>Around USA</h4>
-
-                        <p>
-                            Aplicación web full-stack tipo red social para compartir fotografías,
-                            editar el perfil y gestionar tarjetas de usuario.
-                        </p>
-
-                        <p>
-                            Frontend desarrollado en React y backend en Express.js con MongoDB,
-                            implementando autenticación con tokens y una API REST para la gestión
-                            de usuarios y contenido.
-                        </p>
-                        <p>
-                            Al ser uno de los primeros proyectos completos del bootcamp, el mayor reto
-                            fue manejar estados globales en React y proteger rutas privadas que solo aparecieran
-                            cuando el usuario tuviera la sesión iniciada o que no se pudieran acceder directamente
-                            sin haber iniciado sesión.
-                        </p>
-
-
-
-                        <p class="project-tech">
-                            HTML · CSS · JavaScript · React · APIs REST
-                        </p>
-
-                        <div class="project-links">
-                            <a href="https://fredyalvarezz.github.io/web_project_aroundusa_frontend_demo/"
-                                target="_blank">Visitar sitio</a>
-                            <a href="https://github.com/fredyalvarezz/web_project_api_full" target="_blank">Código</a>
-                        </div>
-                    </div>
+                <div class="project-card-info">
+                    <h4>Around USA</h4>
+                    <p>HTML · CSS · JavaScript · React · APIs REST</p>
                 </div>
             </article>
 
+            <article class="project-card" data-project="coffeeshop">
+                <img src="assets/img/coffeeshop.png" alt="Coffee Shop">
 
-            <article class="project-card">
-                <div class="project-content">
-
-                    <div class="project-images">
-                        <img src="assets/img/coffeeshop.png" alt="Coffee Shop">
-                        <img src="assets/img/coffeeshoprecetas.png" alt="Coffee Shop Recetas">
-                        <img src="assets/img/coffeeshopreservar.png" alt="Coffee Shop Reservar">
-                    </div>
-
-                    <div class="project-info">
-                        <h4>Coffee Shop</h4>
-
-                        <p>
-                            Landing page responsiva para un café, enfocada en estructura,
-                            estilos modernos y buenas prácticas de HTML y CSS, siguiendo una
-                            estructura estricta de diseño y la metodología BEM
-                            para un código estructurado.
-                        </p>
-                        <p>
-                            Se utilizó la integración de contenido desde YouTube para agregar videos
-                            y poder reproducirlos directamente desde la aplicación web.
-                            Fue uno de los primeros proyectos en TripleTen, el cual me ayudó a entender mejor
-                            el funcionamiento de CSS y cómo los diseños bien estructurados permiten que
-                            una aplicación sea responsiva y adaptable a diferentes dispositivos.
-                        </p>
-
-
-                        <p class="project-tech">
-                            HTML · CSS
-                        </p>
-
-                        <div class="project-links">
-                            <a href="https://fredyalvarezz.github.io/web_project_coffeeshop/" target="_blank">Visitar
-                                sitio</a>
-                            <a href="https://github.com/fredyalvarezz/web_project_coffeeshop" target="_blank">Código</a>
-                        </div>
-                    </div>
+                <div class="project-card-info">
+                    <h4>Coffee Shop</h4>
+                    <p>HTML · CSS</p>
                 </div>
             </article>
 
         </div>
+
     </section>
+
+
 
 
     <section id="about" class="section about">
@@ -277,10 +177,37 @@
 
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>© <span id="year"></span> Fredy Alvarez</p>
 
     </footer>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="projectModal">
+
+        <div class="modal-content">
+
+            <span class="modal-close">&times;</span>
+
+            <div class="modal-body">
+
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <p id="modal-tech"></p>
+                    <div id="modal-links"></div>
+                </div>
+
+                <div class="modal-images" id="modal-images"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- JS -->
     <script src="js/main.js"></script>
 
 </body>
