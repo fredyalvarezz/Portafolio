@@ -55,7 +55,7 @@ const projectsData = {
     coffeeshop: {
         title: "Coffee Shop",
         description:
-        "Landing page responsiva para un café, enfocada en estructura, estilos modernos y buenas prácticas de HTML y CSS, siguiendo una estructura estricta de diseño y la metodología BEM para un código estructurado. Se utilizó la integración de contenido desde YouTube para agregar videos y poder reproducirlos directamente desde la aplicación web. Fue uno de los primeros proyectos en TripleTen, el cual me ayudó a entender mejor el funcionamiento de CSS y cómo los diseños bien estructurados permiten que una aplicación sea responsiva y adaptable a diferentes dispositivos.",
+            "Landing page responsiva para un café, enfocada en estructura, estilos modernos y buenas prácticas de HTML y CSS, siguiendo una estructura estricta de diseño y la metodología BEM para un código estructurado. Se utilizó la integración de contenido desde YouTube para agregar videos y poder reproducirlos directamente desde la aplicación web. Fue uno de los primeros proyectos en TripleTen, el cual me ayudó a entender mejor el funcionamiento de CSS y cómo los diseños bien estructurados permiten que una aplicación sea responsiva y adaptable a diferentes dispositivos.",
         tech: "HTML · CSS",
         images: [
             "assets/img/coffeeshop.png",
@@ -66,7 +66,23 @@ const projectsData = {
         ],
         live: "https://fredyalvarezz.github.io/web_project_coffeeshop/",
         github: "https://github.com/fredyalvarezz/web_project_coffeeshop"
-    }
+    },
+
+    barberia: {
+        title: "Barbería",
+        description:
+            "Aplicación web para la gestión de citas de una barbería, desarrollada con React y Vite. Permite a los clientes registrarse, seleccionar un servicio, elegir una fecha y horario disponible y consultar o cancelar sus citas. Incluye un panel administrativo protegido por roles desde el cual se pueden gestionar las citas, actualizar su estado y administrar el catálogo de servicios. La aplicación utiliza Context API para la gestión del estado global y LocalStorage como capa de persistencia de datos.",
+        tech: "React · JavaScript · Vite · React Router · Context API · LocalStorage · HTML · CSS",
+        images: [
+            "assets/img/barberiahome.png",
+            "assets/img/barberiaprofile.png",
+            "assets/img/barberiaadmin.png",
+            "assets/img/barberiaservices.png",
+            "assets/img/barberiaserviceadmin.png"
+        ],
+        live: "https://fredyalvarezz.github.io/barberia/",
+        github: "https://github.com/fredyalvarezz/barberia"
+    },
 };
 
 const cards = document.querySelectorAll(".project-card");
