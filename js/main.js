@@ -78,7 +78,7 @@ const projectsData = {
             "assets/img/barberiaprofile.png",
             "assets/img/barberiaadmin.png",
             "assets/img/barberiaservices.png",
-            "assets/img/barberserviceadmin.png"
+            "assets/img/barberiaserviceadmin.png"
         ],
         live: "https://fredyalvarezz.github.io/barberia/",
         github: "https://github.com/fredyalvarezz/barberia"
