@@ -71,8 +71,8 @@ const projectsData = {
     barberia: {
         title: "Barbería",
         description:
-            "Aplicación web para la gestión de citas de una barbería, desarrollada con React y Vite. Permite a los clientes registrarse, seleccionar un servicio, elegir una fecha y horario disponible y consultar o cancelar sus citas. Incluye un panel administrativo protegido por roles desde el cual se pueden gestionar las citas, actualizar su estado y administrar el catálogo de servicios. La aplicación utiliza Context API para la gestión del estado global y LocalStorage como capa de persistencia de datos.",
-        tech: "React · JavaScript · Vite · React Router · Context API · LocalStorage · HTML · CSS",
+            "Aplicación web full-stack para la gestión y reserva de citas de una barbería. Los clientes pueden registrarse, seleccionar servicios, consultar horarios disponibles, reservar citas y administrar su historial. Incluye un panel administrativo para gestionar citas, servicios, estadísticas e ingresos estimados. El backend está desarrollado con Node.js, Express y MongoDB, e incluye autenticación mediante JWT, autorización basada en roles y una integración con Twilio para notificaciones de WhatsApp.",
+        tech: "React · JavaScript · Vite · React Router · Context API · Node.js · Express.js · MongoDB · JWT · Twilio",
         images: [
             "assets/img/barberiahome.png",
             "assets/img/barberiaprofile.png",
@@ -83,6 +83,61 @@ const projectsData = {
         live: "https://fredyalvarezz.github.io/barberia/",
         github: "https://github.com/fredyalvarezz/barberia"
     },
+
+    miguels: {
+        title: "Miguel's Baja Grill",
+        description: "Landing page responsive desarrollada para un restaurante real ubicado en Moab, Utah. El sitio presenta el menú, platillos, precios, información del restaurante, ubicación, horarios y diferentes formas de contacto. Fue diseñado para ofrecer una navegación sencilla y facilitar el acceso a la información más importante desde dispositivos móviles y escritorio.",
+        tech: "React · JavaScript · HTML5 · CSS3 · Vite · React Icons",
+        images: [
+            "assets/img/miguelsbajagrill.png",
+            "assets/img/miguelsmenu.png",
+            "assets/img/miguelsmenu2.png",
+            "assets/img/miguelsdrinks.png",
+            "assets/img/miguelsdrinks2.png",
+            "assets/img/miguelsfindus.png",
+            "assets/img/miguelscontact.png"
+        ],
+        live: "https://fredyalvarezz.github.io/miguels-baja-grill-restaurant/",
+        github: "https://github.com/fredyalvarezz/miguels-baja-grill-restaurant"
+    },
+
+    restaurant: {
+        title: "Restaurant Recommendation App",
+        description: "Aplicación web full-stack para descubrir, agregar y reseñar restaurantes. Permite registrarse, iniciar sesión, buscar restaurantes, filtrarlos por categoría, ubicación y precio, además de administrar restaurantes y reseñas propias. El frontend está desarrollado con React y Context API, mientras que el backend está preparado con Node.js, Express, MongoDB, autenticación JWT y autorización de usuarios.",
+        tech: "React · JavaScript · Node.js · Express.js · MongoDB · Mongoose · REST API · JWT",
+        images: [
+            "assets/img/restaurantapp.png",
+            "assets/img/restaurantapp2.png",
+            "assets/img/restaurantdetails.png",
+            "assets/img/restaurantdetails2.png",
+            "assets/img/restaurantsearch.png",
+            "assets/img/restaurantlogin.png",
+            "assets/img/restaurantadd.png"
+        
+        ],
+        live: "https://fredyalvarezz.github.io/restaurant-recommendation-app/",
+        github: "https://github.com/fredyalvarezz/restaurant-recommendation-app"
+    },
+
+    notes: {
+        title: "Notes App",
+        description:
+            "Aplicación web de notas con autenticación y organización por categorías. Permite crear, editar, eliminar y buscar notas, además de administrar el perfil del usuario. El frontend está desarrollado con React y Context API, mientras que el backend está preparado con Node.js, Express, MongoDB y autenticación mediante JWT.",
+        tech: "React · JavaScript · Vite · Context API · LocalStorage · Node.js · Express.js · MongoDB · JWT",
+        images: [
+            "assets/img/notesapp.png",
+            "assets/img/notesappnotes.png",
+            "assets/img/notesappnew.png",
+            "assets/img/notesappcat.png",
+            "assets/img/notesappprofile.png"
+        ],
+        live: "https://fredyalvarezz.github.io/notes-app/",
+        github: "https://github.com/fredyalvarezz/notes-app"
+    },
+
+
+
+
 };
 
 const cards = document.querySelectorAll(".project-card");
