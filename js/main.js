@@ -113,7 +113,7 @@ const projectsData = {
             "assets/img/restaurantsearch.png",
             "assets/img/restaurantlogin.png",
             "assets/img/restaurantadd.png"
-        
+
         ],
         live: "https://fredyalvarezz.github.io/restaurant-recommendation-app/",
         github: "https://github.com/fredyalvarezz/restaurant-recommendation-app"
@@ -135,6 +135,21 @@ const projectsData = {
         github: "https://github.com/fredyalvarezz/notes-app"
     },
 
+    bitacora: {
+        title: "Sistema de Bitácora de Mantenimiento",
+        description:
+            "Aplicación web full-stack desarrollada para centralizar la gestión de equipos, incidencias y mantenimientos de una empresa. El sistema cuenta con autenticación mediante JWT y diferentes niveles de acceso para administradores, técnicos y empleados. Permite gestionar equipos, crear y asignar incidencias, consultar historiales de mantenimiento y visualizar estadísticas desde un dashboard. El backend está desarrollado con Node.js, Express y MongoDB, implementando autorización por roles y validación de las operaciones según el usuario autenticado.",
+        tech: "React · Vite · React Router · Context API · Axios · Node.js · Express.js · MongoDB · Mongoose · JWT",
+        images: [
+            "assets/img/bitacora.png",
+            "assets/img/bitacoradashboard.png",
+            "assets/img/bitacoraequipment.png",
+            "assets/img/bitacoraincidents.png",
+            "assets/img/bitacoradetail.png"
+        ],
+        live: "https://fredyalvarezz.github.io/bitacora-mantenimiento/",
+        github: "https://github.com/fredyalvarezz/bitacora-mantenimiento"
+    },
 
 
 
