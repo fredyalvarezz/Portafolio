@@ -4,285 +4,443 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fredy Alvarez | Desarrollador Web Jr</title>
+
+    <title>Fredy Alvarez | Full Stack Developer Jr</title>
+
     <link rel="stylesheet" href="css/index.css" />
+
     <meta name="description"
-        content="Portafolio de Fredy Alvarez, Desarrollador Web Junior. Proyectos en React, APIs REST y Full Stack.">
+        content="Portafolio de Fredy Alvarez, Full Stack Developer Junior. Proyectos en React, Node.js, MongoDB y APIs REST.">
+
     <meta name="author" content="Fredy Alvarez">
 </head>
 
 <body>
 
+    <!-- =========================
+         NAV
+         ========================= -->
+
     <nav class="nav">
+
         <div class="nav__logo">FA</div>
-        <ul class="nav__links">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#skills">Tecnologías</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
+
+        <!-- Botón hamburguesa -->
+        <button
+            class="nav__toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="nav__menu" id="navMenu">
+
+            <ul class="nav__links" id="navLinks">
+                <li>
+                    <a href="#home" data-i18n="nav.home"></a>
+                </li>
+
+                <li>
+                    <a href="#projects" data-i18n="nav.projects"></a>
+                </li>
+
+                <li>
+                    <a href="#skills" data-i18n="nav.skills"></a>
+                </li>
+
+                <li>
+                    <a href="#about" data-i18n="nav.about"></a>
+                </li>
+
+                <li>
+                    <a href="#contact" data-i18n="nav.contact"></a>
+                </li>
+            </ul>
+
+            <!-- Selector de idioma -->
+            <div class="lang-toggle">
+                <button
+                    class="lang-btn"
+                    data-lang="es"
+                    type="button"
+                >
+                    ES
+                </button>
+
+                <button
+                    class="lang-btn"
+                    data-lang="en"
+                    type="button"
+                >
+                    EN
+                </button>
+            </div>
+
+        </div>
+
     </nav>
 
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
     <header id="home" class="intro">
+
         <h1>Fredy Alvarez</h1>
-        <h2>Desarrollador Web Junior</h2>
-        <p>
-            Ingeniero en Sistemas | Full-Stack | Soporte Técnico
-        </p>
 
-        <p>
-            Construyo aplicaciones web modernas enfocadas en experiencia de usuario y arquitectura limpia.
+        <h2>Full Stack Developer Junior</h2>
 
-        </p>
+        <p data-i18n="header.subtitle"></p>
+
+        <p data-i18n="header.description"></p>
+
+        <a
+            href="https://github.com/fredyalvarezz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge-available"
+        >
+            <span class="badge-dot"></span>
+
+            <span data-i18n="header.badge"></span>
+        </a>
+
         <div class="intro-actions">
-            <a href="assets/cv/Fredy_Alvarez_CV.pdf" target="_blank" class="btn-cv">
-                <img src="assets/icons/file.svg" alt="CV icono">
+
+            <a
+                href="assets/cv/Fredy_Alvarez_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-cv"
+            >
+                <img
+                    src="assets/icons/file.svg"
+                    alt="CV icon"
+                >
+
                 CV
             </a>
+
         </div>
+
         <div class="intro-actions">
-            <a href="assets/cv/Fredy_Alvarez_CV-ENG.pdf" target="_blank" class="btn-cv">
-                <img src="assets/icons/file.svg" alt="CV icono">
+
+            <a
+                href="assets/cv/Fredy_Alvarez_CV-ENG.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-cv"
+            >
+                <img
+                    src="assets/icons/file.svg"
+                    alt="CV icon"
+                >
+
                 CV - ENG
             </a>
+
         </div>
+
     </header>
 
-   <!-- Proyectos  -->
+
+    <!-- =========================
+         PROYECTOS
+         ========================= -->
+
     <section id="projects" class="section">
-        <h3>Proyectos</h3>
 
-        <div class="projects">
+        <h3 data-i18n="projects.title"></h3>
 
-            <!-- StreamWhere  -->
+        <p
+            class="section-intro"
+            data-i18n="projects.intro"
+        ></p>
 
-            <article class="project-card" data-project="streamwhere">
-                <img src="assets/img/streamwhere.png" alt="StreamWhere">
+        <div
+            class="featured-projects"
+            id="featuredProjects"
+        >
+        </div>
 
-                <div class="project-card-info">
-                    <h4>StreamWhere</h4>
-                    <p>HTML · CSS · JavaScript · React · APIs REST · Fullstack</p>
-                </div>
-            </article>
 
-            <!-- Around USA  -->
+        <div class="more-projects-toggle">
 
-            <article class="project-card" data-project="aroundusa">
-                <img src="assets/img/aroundusa.png" alt="Around USA">
+            <button
+                id="toggleProjectsBtn"
+                class="btn-toggle"
+                aria-expanded="false"
+                aria-controls="otherProjectsWrapper"
+            >
+            </button>
 
-                <div class="project-card-info">
-                    <h4>Around USA</h4>
-                    <p>HTML · CSS · JavaScript · React · APIs REST</p>
-                </div>
-            </article>
+        </div>
 
-            <!-- Coffee Shop  -->
 
-            <article class="project-card" data-project="coffeeshop">
-                <img src="assets/img/coffeeshop.png" alt="Coffee Shop">
+        <div
+            class="other-projects hidden"
+            id="otherProjectsWrapper"
+        >
 
-                <div class="project-card-info">
-                    <h4>Coffee Shop</h4>
-                    <p>HTML · CSS</p>
-                </div>
-            </article>
-
-            <!-- Barberia  -->
-
-            <article class="project-card" data-project="barberia">
-                <img src="assets/img/barberiahome.png" alt="barberia Home">
-
-                <div class="project-card-info">
-                    <h4>Barberia</h4>
-                    <p>React · JavaScript · Vite · Context API · Node.js · MongoDB · JWT · Twilio</p>
-                </div>
-            </article>
-
-            <!-- Miguel's Baja Grill  -->
-
-            <article class="project-card" data-project="miguels">
-                <img src="assets/img/miguelsbajagrill.png" alt="Miguelsbajagrill">
-
-                <div class="project-card-info">
-                    <h4>Miguel's Baja Grill</h4>
-                    <p>React · JavaScript · HTML · CSS · Vite · React Icons</p>
-                </div>
-            </article>
-
-            <!-- Restaurant Recommendation App  -->
-
-            <article class="project-card" data-project="restaurant">
-                <img src="assets/img/restaurantapp.png" alt="Restaurant Recommendation App">
-
-                <div class="project-card-info">
-                    <h4>Restaurant Recommendation App</h4>
-                    <p>React · JavaScript · Node.js · Express · MongoDB · REST API</p>
-                </div>
-            </article>
-
-            <!-- Note App  -->
-
-            <article class="project-card" data-project="notes">
-                <img src="assets/img/notesapp.png" alt="Notes App">
-
-                <div class="project-card-info">
-                    <h4>Notes App</h4>
-                    <p>React · JavaScript · Vite · Context API · Node.js · Express · MongoDB · JWT</p>
-                </div>
-            </article>
-
-             <!-- Bitacora de Mantenimientos  -->
-
-            <article class="project-card" data-project="bitacora">
-                <img src="assets/img/bitacora.png" alt="istema de Bitácora de Mantenimiento">
-
-                <div class="project-card-info">
-                    <h4>Sistema de Bitácora de Mantenimiento</h4>
-                    <p>React · Node.js · Express · MongoDB · JWT · REST API</p>
-                </div>
-            </article>
+            <div
+                class="projects"
+                id="otherProjects"
+            >
+            </div>
 
         </div>
 
     </section>
 
 
+    <!-- =========================
+         ABOUT
+         ========================= -->
 
+    <section
+        id="about"
+        class="section about"
+    >
 
-    <section id="about" class="section about">
-        <h3>Sobre mí</h3>
+        <h3 data-i18n="about.title"></h3>
 
         <div class="about-content">
+
             <div class="about-photo">
-                <img src="assets/img/me.png" alt="Foto de Fredy Alvarez">
+
+                <img
+                    src="assets/img/me.png"
+                    alt="Foto de Fredy Alvarez"
+                >
+
             </div>
+
 
             <div class="about-text">
-                <p>
-                    Soy Ingeniero en Sistemas Computacionales y Desarrollador Web Junior apasionado por crear
-                    aplicaciones web modernas, funcionales y fáciles de usar.
-                </p>
 
-                <p>
-                    Tengo experiencia desarrollando interfaces responsivas con HTML, CSS, JavaScript y React, así como
-                    integrando APIs REST y aplicando buenas prácticas de desarrollo. Mi experiencia previa en soporte
-                    técnico e infraestructura me permite comprender mejor el funcionamiento de los sistemas, identificar
-                    problemas con rapidez y desarrollar soluciones más sólidas.
+                <p data-i18n="about.p1"></p>
 
-                </p>
+                <p data-i18n="about.p2"></p>
 
-                <p>
-                    Actualmente busco una oportunidad como <strong> Frontend o Full Stack Junior </strong>para seguir
-                    creciendo profesionalmente y contribuir en proyectos reales.
+                <p data-i18n="about.p3"></p>
 
-                </p>
             </div>
+
         </div>
+
     </section>
 
 
+    <!-- =========================
+         SKILLS
+         ========================= -->
 
-    <section id="skills" class="section">
-        <h3>Tecnologías</h3>
+    <section
+        id="skills"
+        class="section"
+    >
+
+        <h3 data-i18n="skills.title"></h3>
 
         <div class="skills">
 
             <div class="skill">
-                <img src="assets/icons/html.png" alt="HTML5">
+                <img
+                    src="assets/icons/html.png"
+                    alt="HTML5"
+                >
                 <span>HTML5</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/css.png" alt="CSS3">
+                <img
+                    src="assets/icons/css.png"
+                    alt="CSS3"
+                >
                 <span>CSS3</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/javascript.png" alt="JavaScript">
+                <img
+                    src="assets/icons/javascript.png"
+                    alt="JavaScript"
+                >
                 <span>JavaScript</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/react.png" alt="React">
+                <img
+                    src="assets/icons/react.png"
+                    alt="React"
+                >
                 <span>React</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/github.png" alt="Git">
+                <img
+                    src="assets/icons/github.png"
+                    alt="Git"
+                >
                 <span>Git / GitHub</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/api.png" alt="APIs REST">
+                <img
+                    src="assets/icons/api.png"
+                    alt="APIs REST"
+                >
                 <span>APIs REST</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/MongoDB.png" alt="MongoDB">
+                <img
+                    src="assets/icons/MongoDB.png"
+                    alt="MongoDB"
+                >
                 <span>MongoDB</span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/support.png" alt="Soporte Técnico">
-                <span>Soporte Técnico</span>
+                <img
+                    src="assets/icons/support.png"
+                    alt="Soporte Técnico"
+                >
+                <span data-i18n="skills.support"></span>
             </div>
 
             <div class="skill">
-                <img src="assets/icons/network.png" alt="Redes">
-                <span>Redes</span>
+                <img
+                    src="assets/icons/network.png"
+                    alt="Redes"
+                >
+                <span data-i18n="skills.network"></span>
             </div>
 
         </div>
+
     </section>
 
 
-    <section id="contact" class="section">
-        <h3>Contacto</h3>
+    <!-- =========================
+         CONTACT
+         ========================= -->
+
+    <section
+        id="contact"
+        class="section"
+    >
+
+        <h3 data-i18n="contact.title"></h3>
+
         <p>
             Email:
             <a href="mailto:fredyalvarez64@gmail.com">
                 fredyalvarez64@gmail.com
             </a>
         </p>
+
         <p>
-            <a href="https://github.com/fredyalvarezz" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/fredyalvarezleyva/" target="_blank">LinkedIn</a>
+
+            <a
+                href="https://github.com/fredyalvarezz"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/fredyalvarezleyva/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
         </p>
 
     </section>
 
-    <!-- Footer -->
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
     <footer class="footer">
-        <p>© <span id="year"></span> Fredy Alvarez</p>
+
+        <p>
+            © <span id="year"></span> Fredy Alvarez
+        </p>
 
     </footer>
 
-    <!-- MODAL -->
 
-    <div class="modal" id="projectModal">
+    <!-- =========================
+         MODAL
+         ========================= -->
+
+    <div
+        class="modal"
+        id="projectModal"
+    >
 
         <div class="modal-content">
 
-            <span class="modal-close">&times;</span>
+            <span
+                class="modal-close"
+                role="button"
+                tabindex="0"
+                aria-label="Cerrar"
+            >
+                &times;
+            </span>
 
             <div class="modal-body">
 
                 <div class="modal-info">
+
                     <h3 id="modal-title"></h3>
-                    <p id="modal-description"></p>
+
+                    <p id="modal-problem"></p>
+
+                    <p id="modal-solution"></p>
+
+                    <ul id="modal-features"></ul>
+
+                    <p id="modal-result"></p>
+
                     <p id="modal-tech"></p>
+
                     <div id="modal-links"></div>
+
                 </div>
 
-                <div class="modal-images" id="modal-images"></div>
+
+                <div
+                    class="modal-images"
+                    id="modal-images"
+                >
+                </div>
 
             </div>
 
         </div>
 
     </div>
-    <!-- JS -->
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
     <script src="js/main.js"></script>
 
 </body>
