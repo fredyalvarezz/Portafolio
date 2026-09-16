@@ -1,20 +1,7 @@
-// ======================================================
 // Año automático en footer
-// ======================================================
-
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
-// ======================================================
-// Diccionario de textos estáticos (UI)
-// ======================================================
-
 const i18n = {
-
-    // -------------------------
-    // NAV
-    // -------------------------
-
     "nav.home": {
         es: "Inicio",
         en: "Home"
@@ -50,11 +37,6 @@ const i18n = {
         en: "Close menu"
     },
 
-
-    // -------------------------
-    // HEADER
-    // -------------------------
-
     "header.subtitle": {
         es: "React · Node.js · Express · MongoDB | Ingeniero en Sistemas | Soporte Técnico",
         en: "React · Node.js · Express · MongoDB | Systems Engineer | Technical Support"
@@ -70,11 +52,7 @@ const i18n = {
         en: "Available for Junior opportunities"
     },
 
-
-    // -------------------------
-    // PROJECTS
-    // -------------------------
-
+    // Proyectos
     "projects.title": {
         es: "Proyectos",
         en: "Projects"
@@ -125,11 +103,7 @@ const i18n = {
         en: "Hide projects"
     },
 
-
-    // -------------------------
     // ABOUT
-    // -------------------------
-
     "about.title": {
         es: "Sobre mí",
         en: "About me"
@@ -150,11 +124,7 @@ const i18n = {
         en: "My previous experience in technical support and infrastructure is a differentiator: it helps me better understand how systems work, quickly identify problems, and build more solid solutions."
     },
 
-
-    // -------------------------
     // SKILLS
-    // -------------------------
-
     "skills.title": {
         es: "Tecnologías",
         en: "Skills"
@@ -170,21 +140,14 @@ const i18n = {
         en: "Networking"
     },
 
-
-    // -------------------------
     // CONTACT
-    // -------------------------
-
     "contact.title": {
         es: "Contacto",
         en: "Contact"
     },
 
-
-    // -------------------------
     // MODAL
-    // -------------------------
-
+  
     "modal.viewProject": {
         es: "Ver proyecto",
         en: "View project"
@@ -198,17 +161,10 @@ const i18n = {
 };
 
 
-// ======================================================
 // Idioma actual
-// ======================================================
-
 let currentLang = localStorage.getItem("portfolioLang") || "es";
 
-
-// ======================================================
 // Datos de proyectos
-// ======================================================
-
 const projectsData = {
 
     barberia: {
@@ -653,11 +609,7 @@ const projectsData = {
 
 };
 
-
-// ======================================================
 // Orden de proyectos
-// ======================================================
-
 const featuredOrder = [
     "barberia",
     "bitacora"
@@ -672,11 +624,7 @@ const otherOrder = [
     "notes"
 ];
 
-
-// ======================================================
 // Título de proyecto
-// ======================================================
-
 function projectTitle(id) {
 
     const p = projectsData[id];
@@ -688,11 +636,7 @@ function projectTitle(id) {
     return p.title;
 }
 
-
-// ======================================================
 // Render de proyectos principales
-// ======================================================
-
 function renderFeatured() {
 
     const container = document.getElementById("featuredProjects");
@@ -798,11 +742,7 @@ function renderFeatured() {
     attachThumbListeners();
 }
 
-
-// ======================================================
 // Render de otros proyectos
-// ======================================================
-
 function renderOthers() {
 
     const container = document.getElementById("otherProjects");
@@ -841,11 +781,7 @@ function renderOthers() {
     attachThumbListeners();
 }
 
-
-// ======================================================
 // Modal
-// ======================================================
-
 const modal = document.getElementById("projectModal");
 
 const modalTitle = document.getElementById("modal-title");
@@ -867,10 +803,7 @@ const modalLinks = document.getElementById("modal-links");
 const closeModal = document.querySelector(".modal-close");
 
 
-// ======================================================
 // Abrir modal
-// ======================================================
-
 function openModal(projectId) {
 
     const project = projectsData[projectId];
@@ -942,10 +875,7 @@ function openModal(projectId) {
     modal.style.display = "flex";
 }
 
-
-// ======================================================
 // Click en imágenes
-// ======================================================
 
 function attachThumbListeners() {
 
@@ -963,10 +893,7 @@ function attachThumbListeners() {
 
 }
 
-
-// ======================================================
 // Cerrar modal
-// ======================================================
 
 function hideModal() {
 
@@ -998,11 +925,7 @@ document.addEventListener("keydown", e => {
 
 });
 
-
-// ======================================================
 // Toggle de otros proyectos
-// ======================================================
-
 const toggleBtn =
     document.getElementById("toggleProjectsBtn");
 
@@ -1059,11 +982,7 @@ toggleBtn.addEventListener("click", () => {
 
 });
 
-
-// ======================================================
 // Traducciones estáticas
-// ======================================================
-
 function applyStaticTranslations(scope = document) {
 
     scope
@@ -1084,10 +1003,8 @@ function applyStaticTranslations(scope = document) {
 }
 
 
-// ======================================================
-// Menú hamburguesa
-// ======================================================
 
+// Menú hamburguesa
 const navToggle =
     document.getElementById("navToggle");
 
@@ -1118,7 +1035,6 @@ function updateNavAccessibility(isOpen) {
 
 }
 
-
 // Abrir / cerrar menú
 function toggleNavMenu() {
 
@@ -1134,8 +1050,7 @@ function toggleNavMenu() {
 
 }
 
-
-// Click en hamburguesa
+// Click en menú hamburguesa
 navToggle.addEventListener(
     "click",
     toggleNavMenu
@@ -1158,10 +1073,7 @@ navLinks.forEach(link => {
 });
 
 
-// ======================================================
 // Idioma
-// ======================================================
-
 function setLanguage(lang) {
 
     currentLang = lang;
@@ -1197,12 +1109,8 @@ function setLanguage(lang) {
 
     renderOthers();
 
-
-    // Toggle proyectos
     updateToggleLabel();
 
-
-    // Actualizar aria del menú
     const isMenuOpen =
         navMenu.classList.contains("active");
 
@@ -1238,10 +1146,7 @@ document
     });
 
 
-// ======================================================
-// Cerrar menú cuando se vuelve a escritorio
-// ======================================================
-
+// Cerrar menu cuando se vuelve a escritorio
 window.addEventListener("resize", () => {
 
     if (window.innerWidth > 768) {
@@ -1256,9 +1161,5 @@ window.addEventListener("resize", () => {
 
 });
 
-
-// ======================================================
-// Inicialización
-// ======================================================
-
+// Inicializacion de lenguaje
 setLanguage(currentLang);
