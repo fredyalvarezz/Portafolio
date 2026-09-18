@@ -59,8 +59,10 @@ const i18n = {
     },
 
     "projects.intro": {
-        es: "Estos son los proyectos que mejor representan mi nivel actual como desarrollador full stack.",
-        en: "These are the projects that best represent my current level as a full stack developer."
+        "projects.intro": {
+            es: "Una selección de proyectos que representa mi experiencia desarrollando aplicaciones web frontend y full stack.",
+            en: "A selection of projects that represents my experience building frontend and full-stack web applications."
+        },
     },
 
     "projects.badgeFeatured": {
@@ -147,7 +149,7 @@ const i18n = {
     },
 
     // MODAL
-  
+
     "modal.viewProject": {
         es: "Ver proyecto",
         en: "View project"
@@ -605,6 +607,67 @@ const projectsData = {
             result: "Strengthened the use of Context API and authentication in React applications."
         }
 
+    },
+
+    kopi: {
+
+        title: "Kopi Coffee",
+
+        featured: false,
+
+        tech: "React · Vite · React Router · Node.js · Express · MongoDB · JWT",
+
+        images: [
+            "assets/img/kopi.png",
+            "assets/img/kopiadmin.png",
+            "assets/img/kopipaneladmin.png",
+            "assets/img/kopiadminproducts.png",
+            "assets/img/kopiadminusers.png",
+            "assets/img/kopiadmincatalog.png",
+            "assets/img/kopiorders.png",
+            "assets/img/kopicartera.png",
+        ],
+
+        live: "https://fredyalvarezz.github.io/Kopi-coffee/",
+
+        github: "https://github.com/fredyalvarezz/Kopi-coffee",
+
+        es: {
+
+            problem: "Una cafetería necesitaba un sistema para gestionar su menú, pedidos, usuarios e inventario desde una misma aplicación.",
+
+            solution: "Aplicación web de punto de venta que permite a los clientes personalizar bebidas y realizar pedidos, mientras los administradores gestionan productos, inventario, pedidos y usuarios desde un panel.",
+
+            features: [
+                "Menú filtrable por categorías con buscador",
+                "Personalización de bebidas con tamaños, leche, sabores y extras",
+                "Carrito y proceso de checkout",
+                "Cartera interna con historial de movimientos",
+                "Panel administrativo con dashboard y estadísticas",
+                "Gestión de productos, pedidos, usuarios e inventario"
+            ],
+
+            result: "Aplicación completa en frontend con persistencia local y un backend preparado con Node.js, Express y MongoDB para futuras integraciones."
+        },
+
+        en: {
+
+            problem: "A coffee shop needed a system to manage its menu, orders, users, and inventory from a single application.",
+
+            solution: "A point-of-sale web application that allows customers to customize drinks and place orders, while administrators manage products, inventory, orders, and users from an admin panel.",
+
+            features: [
+                "Filterable menu by category with live search",
+                "Drink customization with sizes, milk, flavors, and extras",
+                "Shopping cart and checkout process",
+                "Internal wallet with transaction history",
+                "Admin dashboard with statistics",
+                "Product, order, user, and inventory management"
+            ],
+
+            result: "A complete frontend application with local persistence and a backend prepared with Node.js, Express, and MongoDB for future integration."
+        }
+
     }
 
 };
@@ -621,7 +684,8 @@ const otherOrder = [
     "coffeeshop",
     "miguels",
     "restaurant",
-    "notes"
+    "notes",
+    "kopi"
 ];
 
 // Título de proyecto
