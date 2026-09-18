@@ -626,6 +626,7 @@ const projectsData = {
             "assets/img/kopiadmincatalog.png",
             "assets/img/kopiorders.png",
             "assets/img/kopicartera.png",
+            "assets/img/kopiprofile.png",
         ],
 
         live: "https://fredyalvarezz.github.io/Kopi-coffee/",
